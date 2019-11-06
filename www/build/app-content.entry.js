@@ -9,7 +9,7 @@ const Content = class {
         this._displayIndex = event.detail;
     }
     render() {
-        return (h("div", { class: "relative h-screen bg-green-500 text-green-200 animate" }, this._displayIndex === 0 ? h("app-gallery", null) : h("app-find", null), h("app-footer", null)));
+        return (h("div", { class: "max-w-sm mx-auto relative h-screen bg-green-500 text-green-200 animate" }, this._displayIndex === 0 ? h("app-gallery", null) : h("app-find", null), h("app-footer", null)));
     }
 };
 

@@ -6,7 +6,7 @@ export const GalleryItem: FunctionalComponent<{
   places: string;
 }> = ({ title, story, places }) => {
   return (
-    <div class="px-1 w-screen h-screen bg-transparent">
+    <div class="px-1 h-screen bg-transparent">
       <div class="border-b my-2 text-center text-2xl">{title}</div>
       <img class="border w-64 mx-auto mb-4" src="../../assets/flower.jpg" />
       <div>

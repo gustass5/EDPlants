@@ -1,7 +1,7 @@
 import { h, r as registerInstance } from './core-e86e2c51.js';
 
 const GalleryItem = ({ title, story, places }) => {
-    return (h("div", { class: "px-1 w-screen h-screen bg-transparent" },
+    return (h("div", { class: "px-1 h-screen bg-transparent" },
         h("div", { class: "border-b my-2 text-center text-2xl" }, title),
         h("img", { class: "border w-64 mx-auto mb-4", src: "../../assets/flower.jpg" }),
         h("div", null,
@@ -17,7 +17,7 @@ const Gallery = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return (h("div", { class: "overflow-y-auto absolute h-screen bg-transparent text-gray-200 text-xl animate" }, h(GalleryItem, { title: "Rose", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" }), h(GalleryItem, { title: "Violet", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" }), h(GalleryItem, { title: "Beet", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" })));
+        return (h("div", { class: "overflow-y-auto h-screen bg-transparent text-gray-200 text-xl animate" }, h(GalleryItem, { title: "Rose", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" }), h(GalleryItem, { title: "Violet", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" }), h(GalleryItem, { title: "Beet", story: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", places: "The Netherlands" })));
     }
 };
 

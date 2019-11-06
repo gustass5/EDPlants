@@ -12,7 +12,7 @@ export class Content {
   }
   render() {
     return (
-      <div class="relative h-screen bg-green-500 text-green-200 animate">
+      <div class="max-w-sm mx-auto relative h-screen bg-green-500 text-green-200 animate">
         {this._displayIndex === 0 ? <app-gallery /> : <app-find />}
         <app-footer />
       </div>

@@ -6,7 +6,7 @@ import { Component, h } from "@stencil/core";
 export class LandingPage {
   render() {
     return (
-      <div class="flex flex-col items-center justify-center h-screen bg-green-500 text-green-200 text-5xl animate">
+      <div class="max-w-sm mx-auto flex flex-col items-center justify-center h-screen bg-green-500 text-green-200 text-5xl animate">
         <img
           class="w-48 h-48 mb-10 p-3 border-4 border-green-200 rounded-full"
           src="../../assets/leaf-solid.svg"
